@@ -337,7 +337,7 @@ r = 基數<br/>
 
 ## 平方探測法
 線性探測的一個缺點是類似的鍵值常常會聚集在一起，因此可以考慮使用平方探測法加以改善<br/>
-當碰撞發生時，下個搜尋位址是 (f(x) + ((B - 1) / 2)^2) mod B 與 (f(x) - ((B - 1) / 2)^2) mod B
+當碰撞發生時，下個搜尋位址是 (f(x) + ((B - 1) / 2)^2) mod B 與 (f(x) - ((B - 1) / 2)^2) mod B<br/>
 B 必須是 4j + 3 的質數
 
 ## 再雜湊法
@@ -379,15 +379,14 @@ B 必須是 4j + 3 的質數
 規則1. 直徑小的套環永遠在直徑大的套環上<br/>
 規則2. 套環可任意移動<br/>
 規則3. 每次只能移動一個套環<br/>
-<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/tower_of_hanoi.gif">
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/tower_of_hanoi.gif"><br/>
 
 ## 八皇后演算法
 皇后可以直吃、橫吃及斜吃<br/>
 後放入的新皇后需要考慮是否會被已放入的舊皇后吃掉<br/>
 4x4 棋盤：四皇后<br/>
 8x8 棋盤：八皇后<br/>
-
-<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/8_queen.png">
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/8_queen.png"><br/>
 
 
 # 樹狀演算法
