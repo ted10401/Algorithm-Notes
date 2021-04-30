@@ -201,7 +201,7 @@ perfect hashing 完美雜湊：沒有碰撞也沒有溢位的雜湊函數<br/>
 假設未排序的資料在一範圍內分布，就將這些資料劃分為數個範圍，並逐一將未排序的資料放入範圍內並計數，最後根據計數將資料取出合併
 
 時間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/complexity_n+k.png"><br/>
-空間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/complexity_n.png"><br/>
+空間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/complexity_k.png"><br/>
 n: 資料比數<br/>
 k: 桶子數量<br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bucket_sort.gif"><br/>
