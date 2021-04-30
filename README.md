@@ -25,7 +25,7 @@
 - [遺傳演算法 Genetic Algorithm](#遺傳演算法-genetic-algorithm)
 - [尋徑演算法](#尋徑演算法)
 - [賽局樹 Game Tree](#賽局樹-game-tree)
-- [參考來源](#參考來源)
+- [資料來源](#資料來源)
 
 # 進入演算法的世界
 ## 定義
@@ -738,8 +738,6 @@ f(x) 如果存在實數 k，使 f(k) = 0，x = k 則為函數 f(x) 的零點。<
 
 
 # 幾何與電腦圖形學
-[Vector](http://web.ntnu.edu.tw/~algo/Point.html)
-
 ## 向量
 有大小又有方向的量
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_1.png"><br/>
@@ -885,45 +883,43 @@ private bool IsPointInCircle(Vector2 center, float radius, Vector2 point)
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/circle_3.png">：半徑
 
 ## 橢圓
-
- ：圓心座標
-：長軸
-：短軸
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/circle_1.png"><br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/circle_2.png">：圓心座標<br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/circle_3.png">：長軸<br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/circle_4.png">：短軸<br/>
 
 # 傅立葉變換演算法 Fourier Transform
-時域訊號，座標軸是時間軸，表示訊號強度隨時間變化的情況。
-頻域訊號，座標軸是頻率，表示訊號在各個頻率上的相對功率強度。
+時域訊號，座標軸是時間軸，表示訊號強度隨時間變化的情況。<br/>
+頻域訊號，座標軸是頻率，表示訊號在各個頻率上的相對功率強度。<br/>
 
 許多情況下，訊號的某些特徵在時域表現不明顯，但如果轉換到頻域，這些特徵就一目了然。
 
 ## 離散傅立葉轉換 Discrete Fourier Transform, DFT
-什麼是傅立葉變換？
+什麼是傅立葉變換？<br/>
 任何連續週期訊號可以由一組適當的正弦曲線組合而成，所以滿足一定條件的連續函數都可以表示成一系列三角函數或者它們的積分的線性組合形式，這個轉換就是傅立葉變換。
 
 ## 快速傅立葉變換 Fast Fourier Transform, FFT
-基本思維就是利用週期性和對稱性，將 N 個點的 DFT 分解成 n 個 N/n 點的 DFT，從而減少運算量。
-週期性：
-對稱性：
+基本思維就是利用週期性和對稱性，將 N 個點的 DFT 分解成 n 個 N/n 點的 DFT，從而減少運算量。<br/>
+週期性：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/fft_1.png"><br/>
+對稱性：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/fft_2.png"><br/>
 
-
-實務上有需要建議使用 Real FFT
-Real FFT Algorithms
+實務上有需要建議使用 Real FFT<br/>
+[Real FFT Algorithms](http://www.robinscheibler.org/2013/02/13/real-fft.html)
 
 # 遺傳演算法 Genetic Algorithm
 達爾文『物競天擇，適者生存』，借鑑這種生物體自然選擇和自然遺傳機制的隨機搜尋演算法，透過評估函數進行優勝劣汰的選擇，透過交配和變異模擬生物的進化。
 
-基因 Gene：單獨的遺傳因數，包含一組不能在拆分的生物學特徵
-染色體 Chromosome：一組基因的組合
-種群 Population：生物的進化以群體的形式進行
-個體 Individuals
-交配 Crossover：繁殖的過程，將種群中的個體兩兩進行部分基因編碼片段的互換
-基因突變 Mutation：直接替換個體基因中的某個或某幾個編碼
-選擇 Selection：按造一定的規則從上一代種群中選擇個體遺傳到下一代
-適應度 Fitness：個體對環境的適應程度，適應度低的個體會逐步淘汰
+基因 Gene：單獨的遺傳因數，包含一組不能在拆分的生物學特徵<br/>
+染色體 Chromosome：一組基因的組合<br/>
+種群 Population：生物的進化以群體的形式進行<br/>
+個體 Individuals<br/>
+交配 Crossover：繁殖的過程，將種群中的個體兩兩進行部分基因編碼片段的互換<br/>
+基因突變 Mutation：直接替換個體基因中的某個或某幾個編碼<br/>
+選擇 Selection：按造一定的規則從上一代種群中選擇個體遺傳到下一代<br/>
+適應度 Fitness：個體對環境的適應程度，適應度低的個體會逐步淘汰<br/>
 
 # 尋徑演算法
-## Dijkstra 演算法
-## A* 演算法
+對稱性：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/path_finding.png"><br/>
 
 # 賽局樹 Game Tree
 賽局可以理解為有限參與者進行有限策略選擇的競爭性活動，如下棋、打牌、競技、戰爭等。
@@ -937,9 +933,10 @@ Real FFT Algorithms
 ## 極大極小值演算法 Minimax
 總是選擇最小化對手的最大利益
 
-極大值節點，先手的選擇節點，會選擇對先手最有利的評估最大值
-極小值節點，後手的選擇節點，會選擇對先手最不利的評估最小值，因為這一手是站在後手的立場進行選擇
+極大值節點，先手的選擇節點，會**選擇對先手最有利的評估最大值**<br/>
+極小值節點，後手的選擇節點，會**選擇對先手最不利的評估最小值**，因為這一手是站在後手的立場進行選擇
 
+```csharp
 private int MiniMax(node, depth, isMaxPlayer)  
 {  
     if(depth == 0)  
@@ -961,13 +958,15 @@ private int MiniMax(node, depth, isMaxPlayer)
         }  
     }  
 }  
+```
 
 ## 負極大值演算法 Negamax
 由於極大極小值演算法需要個別區分目前的節點是最大值還是最小值節點，而消除了極大極小值的演算法即為負極大值演算法。
 
 核心基礎
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/negamax.png"><br/>
 
-
+```csharp
 private int NegaMax(node, depth, color)  
 {  
     if(depth == 0)  
@@ -982,22 +981,23 @@ private int NegaMax(node, depth, color)
         score = max(score, value);  
     }  
 }  
+```
 
 ## 剪枝演算法 Alpha-beta Pruning
- 剪枝：極小值節點搜尋極大值時，極大值中的最小值為 ，若另一極小值節點的極大值比  還小，則可終止節點搜尋
-
- 剪枝：極大值節點搜尋極小值時，極小值中的最大值為 ，若另一極大值節點的極小值比  還大，則可終止節點搜尋
-
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/alpha.png"> 剪枝：極小值節點搜尋極大值時，極大值中的最小值為<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/alpha.png">，若另一極小值節點的極大值比  還小，則可終止節點搜尋<br/>
+<br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/beta.png">剪枝：極大值節點搜尋極小值時，極小值中的最大值為<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/beta.png">，若另一極大值節點的極小值比  還大，則可終止節點搜尋<br/>
+<br/>
 搜尋開始時，設定
-
-
-在搜尋過程中，逐步收窄這個範圍，即為  剪枝
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/alpha_infinity.png"><br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/beta_infinity.png"><br/>
+在搜尋過程中，逐步收窄這個範圍，即為<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/alpha_beta.png">剪枝
 
 ### 井字遊戲
-估值函數：(先手雙連子數 - 後手雙連子數) x 10 + (先手空行數 - 先手空行數) - 後手雙連子數
-空行數：行、列、斜線上只有己方棋子或空個子
-雙連子數：行、列、斜線上有兩個己方棋子，且沒有對方棋子
-
+估值函數：(先手雙連子數 - 後手雙連子數) x 10 + (先手空行數 - 先手空行數) - 後手雙連子數<br/>
+空行數：行、列、斜線上只有己方棋子或空個子<br/>
+雙連子數：行、列、斜線上有兩個己方棋子，且沒有對方棋子<br/>
+```csharp
 public int Evaluate(GameState gameState, PlayerType maxPlayerType)  
 {  
     int max1 = gameState.GetNoCount(maxPlayerType);  
@@ -1020,9 +1020,11 @@ public int Evaluate(GameState gameState, PlayerType maxPlayerType)
     }  
   
     return (max2 - min2) * 10 + (max1 - min1) - min2;  
-
-
+}
+```
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/ooxx.gif"><br/>
 
 # 參考來源
-圖說演算法：使用Python
-演算法的樂趣：23個程式設計必學主題與應用實例
+[圖說演算法：使用Python](https://www.books.com.tw/products/0010779462)
+[演算法的樂趣：23個程式設計必學主題與應用實例](https://www.books.com.tw/products/0010691123)
+[Vector](http://web.ntnu.edu.tw/~algo/Point.html)
