@@ -645,10 +645,10 @@ while(從 Xi 的鄰接串列中找到下一個關鍵頂點 Yj)
 
 # 蔡勒演算法 Zeller Algorithm
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/zeller_algorithm.png"><br/>
-c: 世紀數 - 1，如 21 世紀，則 c = 20
-m: 月數，m 需大於等於 3，小於等於 14，1 月和 2 月看做上一年的 13 月和 14 月
-y: 年份，取西元年後兩位，如 1998 年，y = 98，2001 年，y = 1
-d: 某月內的日數
+c: 世紀數 - 1，如 21 世紀，則 c = 20<br/>
+m: 月數，m 需大於等於 3，小於等於 14，1 月和 2 月看做上一年的 13 月和 14 月<br/>
+y: 年份，取西元年後兩位，如 1998 年，y = 98，2001 年，y = 1<br/>
+d: 某月內的日數<br/>
 
 ## 判斷是否為閨年
 ```charp
@@ -730,9 +730,9 @@ private int ZellerWeek(int year, int month, int day)
 f(x) 如果存在實數 k，使 f(k) = 0，x = k 則為函數 f(x) 的零點。<br/>
 如果 f(x) 是[單調函數](https://zh.wikipedia.org/wiki/%E5%8D%95%E8%B0%83%E5%87%BD%E6%95%B0)，且 f(a) 和 f(b) 異號，代表 [a, b] 之間一定有零點，此時就可以使用二分逼近法近似地找到這個零點。<br/>
 
-如果 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bisection_method_1.png">，則 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bisection_method_2.png"> 就是零點
-如果 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bisection_method_3.png">，則零點在區間 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bisection_method_4.png">，令 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bisection_method_5.png">，回到 (1)
-如果 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bisection_method_6.png">，則零點在區間 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bisection_method_7.png">，令 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bisection_method_5.png">，回到 (1)
+(1) 如果 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bisection_method_1.png">，則 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bisection_method_2.png"> 就是零點<br/>
+(2) 如果 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bisection_method_3.png">，則零點在區間 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bisection_method_4.png">，令 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bisection_method_5.png">，回到 (1)<br/>
+(3) 如果 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bisection_method_6.png">，則零點在區間 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bisection_method_7.png">，令 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bisection_method_5.png">，回到 (1)<br/>
 
 ## 牛頓法 Newton’s Method
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/newtons_method.png">
