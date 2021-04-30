@@ -472,13 +472,13 @@ ABDFGHIEC<br/>
 A* 演算法與 Dijkstra 演算法最大的差異是 A* 演算法除了起點到各頂點的實際權重之外，也會預估各頂點到終點的預測權重，可以有效的減少不必要的搜尋動作
 
 #### 距離評估函數
-曼哈頓距離 Manhattan Distance
+曼哈頓距離 Manhattan Distance<br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/astar_manhattan_distance.png"><br/>
 
-切比雪夫距離 Chebysev Distance
+切比雪夫距離 Chebysev Distance<br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/astar_chebysev_distance.png"><br/>
 
-歐氏幾何平面直線距離 Euclidean Distance
+歐氏幾何平面直線距離 Euclidean Distance<br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/astar_euclidean_distance.png"><br/>
 
 ### Floyd 演算法
