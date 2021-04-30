@@ -290,17 +290,17 @@ r = 基數<br/>
 
 
 # 搜尋演算法
-搜尋分為靜態搜尋、動態搜尋，根據搜尋過程中被搜尋的表格或資料是否異動來分類
-靜態搜尋：指資料在搜尋過程中，該搜尋資料不會有增加、刪除、或更新等行為
-動態搜尋：指資料在搜尋過程中，會經常性地增加、刪除或更新
+搜尋分為靜態搜尋、動態搜尋，根據搜尋過程中被搜尋的表格或資料是否異動來分類<br/>
+靜態搜尋：指資料在搜尋過程中，該搜尋資料不會有增加、刪除、或更新等行為<br/>
+動態搜尋：指資料在搜尋過程中，會經常性地增加、刪除或更新<br/>
 
 ## 循序搜尋、線性搜尋 Sequential Search
-逐次搜尋每筆資料，優點為在搜尋前不需要做任何的處理與排序，缺點為搜尋速度較慢，
-最好的情況搜尋1次就找到資料，最差的情況是搜尋 N 筆資料後未找到資料
+逐次搜尋每筆資料，優點為在搜尋前不需要做任何的處理與排序，缺點為搜尋速度較慢，<br/>
+最好的情況搜尋1次就找到資料，最差的情況是搜尋 N 筆資料後未找到資料<br/>
 
 ## 二分搜尋法 Binary Search
-資料須事先排序才可以使用二分搜尋法進行搜尋
-主要是將資料分成兩等分，比較搜尋值與中間值的大小，如果搜尋值小於中間值，則可以確定搜尋值在資料的前半段，依序分割資料直到找到鍵值
+資料須事先排序才可以使用二分搜尋法進行搜尋<br/>
+主要是將資料分成兩等分，比較搜尋值與中間值的大小，如果搜尋值小於中間值，則可以確定搜尋值在資料的前半段，依序分割資料直到找到鍵值<br/>
 
 ## 內插搜尋法 Interpolation Search
 二分搜尋法的改良版本，利用內插公式預測資料的所在位置，再利用二分法逐步逼近
@@ -328,15 +328,15 @@ r = 基數<br/>
 適用於資料不會修改，且為數字型態的資料，將重複性高的部分刪除，擷取適當的數字
 
 # 碰撞與溢位處理
-雜湊法的理想情況是所有資料經過雜湊函數運算後都能得到不同的值
-當雜湊函數運算後得到相同的位址則發生碰撞
-當 Bucket 滿了則發生溢位
+雜湊法的理想情況是所有資料經過雜湊函數運算後都能得到不同的值<br/>
+當雜湊函數運算後得到相同的位址則發生碰撞<br/>
+當 Bucket 滿了則發生溢位<br/>
 
 ## 線性探測法
 當碰撞發生時，以線性方式往後找尋空儲存空間
 
 ## 平方探測法
-線性探測的一個缺點是類似的鍵值常常會聚集在一起，因此可以考慮使用平方探測法加以改善
+線性探測的一個缺點是類似的鍵值常常會聚集在一起，因此可以考慮使用平方探測法加以改善<br/>
 當碰撞發生時，下個搜尋位址是 (f(x) + ((B - 1) / 2)^2) mod B 與 (f(x) - ((B - 1) / 2)^2) mod B
 B 必須是 4j + 3 的質數
 
@@ -350,23 +350,23 @@ B 必須是 4j + 3 的質數
 可分為靜態資料結構 Static Data Structure、動態資料結構 Dynamic Data Structure
 
 ## 靜態資料結構
-將有序串列的資料使用連續記憶體空間來儲存，在編譯時就配置給相關的變數
-優點是設計時相當簡單及讀取與修改資料的時間固定
-缺點是新增或刪除資料時，需要移動大量的資料
+將有序串列的資料使用連續記憶體空間來儲存，在編譯時就配置給相關的變數<br/>
+優點是設計時相當簡單及讀取與修改資料的時間固定<br/>
+缺點是新增或刪除資料時，需要移動大量的資料<br/>
 
 ## 動態資料結構
-鏈結串列 Linked List 又稱為動態資料結構，使用不連續記憶空間來儲存
-優點是資料的新增或刪除相當方便
-缺點是設計資料結構時較為麻煩，且搜尋資料時，需要透過循序搜尋找到該資料為止
+鏈結串列 Linked List 又稱為動態資料結構，使用不連續記憶空間來儲存<br/>
+優點是資料的新增或刪除相當方便<br/>
+缺點是設計資料結構時較為麻煩，且搜尋資料時，需要透過循序搜尋找到該資料為止<br/>
 
 ## 矩陣
 ### 矩陣相加
 兩矩陣列數與行數必須相等
 
 ### 矩陣相乘
-若 A 矩陣為 m*n 矩陣
-則 B 矩陣須為 n*p 矩陣
-才可滿足矩陣相乘條件
+若 A 矩陣為 m*n 矩陣<br/>
+則 B 矩陣須為 n*p 矩陣<br/>
+才可滿足矩陣相乘條件<br/>
 
 ### 轉置矩陣
 將 A 矩陣的行座標元素與列座標元素相互調換，即為 A 的轉置矩陣 A’
@@ -376,57 +376,59 @@ B 必須是 4j + 3 的質數
 
 
 ## 河內塔演算法
-規則1. 直徑小的套環永遠在直徑大的套環上
-規則2. 套環可任意移動
-規則3. 每次只能移動一個套環
+規則1. 直徑小的套環永遠在直徑大的套環上<br/>
+規則2. 套環可任意移動<br/>
+規則3. 每次只能移動一個套環<br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/tower_of_hanoi.gif">
 
 ## 八皇后演算法
-皇后可以直吃、橫吃及斜吃
-後放入的新皇后需要考慮是否會被已放入的舊皇后吃掉
-4x4 棋盤：四皇后
-8x8 棋盤：八皇后
+皇后可以直吃、橫吃及斜吃<br/>
+後放入的新皇后需要考慮是否會被已放入的舊皇后吃掉<br/>
+4x4 棋盤：四皇后<br/>
+8x8 棋盤：八皇后<br/>
 
-
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/8_queen.png">
 
 
 # 樹狀演算法
 樹與圖最大的差異是，樹是不包含迴路的連通無向圖
 
 完滿二元樹 Full Binary Tree
-
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/tree_full_binary_tree.jpg"><br/>
 
 完整二元樹 Complete Binary Tree
-
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/tree_complete_binary_tree.jpg"><br/>
 
 歪斜樹 Skewed Binary Tree
-
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/tree_skewed_binary_tree.jpg"><br/>
 
 嚴正二元樹 Strictly Binary Tree
-
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/tree_strictly_binary_tree.jpg"><br/>
 
 ## 二元樹走訪
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/tree_binary_tree_traversal.jpg"><br/>
 
-中序走訪 Inorder Traversal：左子樹 > 樹根 > 右子樹
-FDGHIBEAC
+中序走訪 Inorder Traversal：左子樹 > 樹根 > 右子樹<br/>
+FDGHIBEAC<br/>
 
-後序走訪 Postorder Traversal：左子樹 > 右子樹 > 樹根
-FHIGDEBCA
+後序走訪 Postorder Traversal：左子樹 > 右子樹 > 樹根<br/>
+FHIGDEBCA<br/>
 
-前序走訪 Preorder Traversal：樹根 > 左子樹 > 右子樹
-ABDFGHIEC
+前序走訪 Preorder Traversal：樹根 > 左子樹 > 右子樹<br/>
+ABDFGHIEC<br/>
 
 ## 二元樹節點搜尋
 比節點小就往左子樹搜尋，比節點大就往右子樹搜尋，直到找到節點
 
 ## 二元樹節點插入
-節點插入後仍要保持二元搜尋樹的特性
-若樹中有該筆資料，不進行插入
-若樹中沒有該資料，則加入該資料
+節點插入後仍要保持二元搜尋樹的特性<br/>
+若樹中有該筆資料，不進行插入<br/>
+若樹中沒有該資料，則加入該資料<br/>
 
 ## 二元樹節點刪除
-刪除的節點是樹葉：將其父節點指向 None
-刪除的節點有一個子樹：將其父節點指向子樹
-刪除的節點有兩個子樹：將預刪除節點的左子樹最大者向上提，或是將預刪除節點的右子樹最小者向上提
+刪除的節點是樹葉：將其父節點指向 None<br/>
+刪除的節點有一個子樹：將其父節點指向子樹<br/>
+刪除的節點有兩個子樹：將預刪除節點的左子樹最大者向上提，或是將預刪除節點的右子樹最小者向上提<br/>
 
 ## 堆積樹排序法 Heap Tree
 最大堆積樹
@@ -464,35 +466,36 @@ ABDFGHIEC
 3. 選擇最小距離頂點並加入 S 集合
 4. 重複執行步驟 2 直到 S 集合 = V 集合
 
-時間複雜度：
-空間複雜度：
+時間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/complexity_M+NlogN.png"><br/>
+空間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/complexity_M.png"><br/>
 
 ### A* 演算法
 A* 演算法與 Dijkstra 演算法最大的差異是 A* 演算法除了起點到各頂點的實際權重之外，也會預估各頂點到終點的預測權重，可以有效的減少不必要的搜尋動作
 
 #### 距離評估函數
 曼哈頓距離 Manhattan Distance
-
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/astar_manhattan_distance.png"><br/>
 
 切比雪夫距離 Chebysev Distance
-
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/astar_chebysev_distance.png"><br/>
 
 歐氏幾何平面直線距離 Euclidean Distance
-
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/astar_euclidean_distance.png"><br/>
 
 ### Floyd 演算法
-Dijkstra 演算法只能求出某一頂點到其他頂點的最短距離
-如果要求出圖形任意兩頂點的最短距離就必須要使用 Floyd 演算法
-假設頂點數量為 N，則需要執行 N 次迴圈逐一產生 A^1 ~ A^n 個矩陣
+Dijkstra 演算法只能求出某一頂點到其他頂點的最短距離<br/>
+如果要求出圖形任意兩頂點的最短距離就必須要使用 Floyd 演算法<br/>
+假設頂點數量為 N，則需要執行 N 次迴圈逐一產生 A^1 ~ A^n 個矩陣<br/>
 
-時間複雜度：
-空間複雜度：
+時間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/complexity_N3.png"><br/>
+空間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/complexity_N2.png"><br/>
 
 ### Bellman-Ford 演算法
-Dijkstra 演算法雖然好，但不能解決負權邊的圖
-Bellman-Ford 演算法是無論是在思維上、還是程式碼實作上都堪稱完美的最短路徑演算法
+Dijkstra 演算法雖然好，但不能解決負權邊的圖<br/>
+Bellman-Ford 演算法是無論是在思維上、還是程式碼實作上都堪稱完美的最短路徑演算法<br/>
 
 核心程式碼
+```csharp
 for(int k = 1; k <= n - 1; k++)  
 {  
     for(int i = 1; i <= m; i++)  
@@ -503,18 +506,19 @@ for(int k = 1; k <= n - 1; k++)
         }  
     }  
 }  
-n: 頂點個數
-m: 邊個數
-dis: 紀錄頂點到其餘各頂點的最短路徑
+```
+n: 頂點個數<br/>
+m: 邊個數<br/>
+dis: 紀錄頂點到其餘各頂點的最短路徑<br/>
 
-時間複雜度：
-空間複雜度：
+時間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/complexity_NM.png"><br/>
+空間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/complexity_M.png"><br/>
 
 ### 佇列優化的 Bellman-Ford 演算法
 Bellman-Ford 演算法會鬆弛所有的頂點與邊，即使該頂點已求得最短路徑，佇列優化的 Bellmain-Ford 則是在此基礎上，只針對最短路徑發生變化的點的相鄰邊執行鬆弛操作
 
-時間複雜度：
-空間複雜度：
+時間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/complexity_NM.png"><br/>
+空間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/complexity_M.png"><br/>
 
 # 主元素問題
 問題：已知一總數為 N 的序列 ，其中有一個數字出現的次數大於 N/2，請找出這個數字
