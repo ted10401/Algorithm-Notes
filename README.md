@@ -46,8 +46,8 @@
 
 
 ## 時間複雜度 O(f(n))
-假如執行時間 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/%E6%99%82%E9%96%93%E8%A4%87%E9%9B%9C%E5%BA%A6%20-%20%E5%9F%B7%E8%A1%8C%E6%99%82%E9%96%93.png" width="400" />
-則時間複雜度為 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/%E6%99%82%E9%96%93%E8%A4%87%E9%9B%9C%E5%BA%A6.png" width="400" />
+假如執行時間 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/%E6%99%82%E9%96%93%E8%A4%87%E9%9B%9C%E5%BA%A6%20-%20%E5%9F%B7%E8%A1%8C%E6%99%82%E9%96%93.png"/><br/>
+則時間複雜度為 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/%E6%99%82%E9%96%93%E8%A4%87%E9%9B%9C%E5%BA%A6.png"/>
 
 
 ## 常見演算法
