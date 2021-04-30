@@ -173,9 +173,9 @@ E = { (A, B), (A, E), (B, C), (B, D), (C, D), (C, E), (D, E) }<br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/%E7%84%A1%E5%90%91%E5%9C%96%E5%BD%A2.jpg"/>
 
 ### 有向圖形 Digraph
-使用 <V1, V2> 表示方向性
-V = { A, B, C, D, E }
-E = { <A, B>, <B, C>, <C, D>, <C, E>, <E, D>, <D, B> }
+使用 <V1, V2> 表示方向性<br/>
+V = { A, B, C, D, E }<br/>
+E = { <A, B>, <B, C>, <C, D>, <C, E>, <E, D>, <D, B> }<br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/%E6%9C%89%E5%90%91%E5%9C%96%E5%BD%A2.jpg"/>
 
 ## 雜湊表
