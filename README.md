@@ -1024,6 +1024,6 @@ public int Evaluate(GameState gameState, PlayerType maxPlayerType)
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/ooxx.gif"><br/>
 
 # 資料來源
-[圖說演算法：使用Python](https://www.books.com.tw/products/0010779462)
-[演算法的樂趣：23個程式設計必學主題與應用實例](https://www.books.com.tw/products/0010691123)
-[Vector](http://web.ntnu.edu.tw/~algo/Point.html)
+[圖說演算法：使用Python](https://www.books.com.tw/products/0010779462)<br/>
+[演算法的樂趣：23個程式設計必學主題與應用實例](https://www.books.com.tw/products/0010691123)<br/>
+[Vector](http://web.ntnu.edu.tw/~algo/Point.html)<br/>
