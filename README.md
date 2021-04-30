@@ -75,13 +75,9 @@
 2. 將問題分解為一系列子問題，定義子問題的最優解<br/>
 3. 取得子問題的局部最優解，將子問題堆疊出全域最優解<br/>
 
-案例：0-1 背包問題
-
 ### 動態規劃法 Dynamic Programming Algorithm
 解決多階段決策問題常用的最優化理論<br/>
-將每個子問題的答案儲存起來供下次求解時直接取用<br/>
-
-案例：字串編輯距離
+將每個子問題的答案儲存起來供下次求解時直接取用<br>
 
 ### 疊代法 Iterative Algorithm
 
@@ -204,8 +200,8 @@ perfect hashing 完美雜湊：沒有碰撞也沒有溢位的雜湊函數<br/>
 ## 桶子排序法 Bucket Sort
 假設未排序的資料在一範圍內分布，就將這些資料劃分為數個範圍，並逐一將未排序的資料放入範圍內並計數，最後根據計數將資料取出合併
 
-時間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/time_complexity_n2.png"><br/>
-空間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/space_complexity_1.png"><br/>
+時間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/complexity_n+k.png"><br/>
+空間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/complexity_n.png"><br/>
 n: 資料比數<br/>
 k: 桶子數量<br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bucket_sort.gif"><br/>
@@ -364,8 +360,8 @@ B 必須是 4j + 3 的質數
 兩矩陣列數與行數必須相等
 
 ### 矩陣相乘
-若 A 矩陣為 m*n 矩陣<br/>
-則 B 矩陣須為 n*p 矩陣<br/>
+若 A 矩陣為 m * n 矩陣<br/>
+則 B 矩陣須為 n * p 矩陣<br/>
 才可滿足矩陣相乘條件<br/>
 
 ### 轉置矩陣
@@ -376,16 +372,16 @@ B 必須是 4j + 3 的質數
 
 
 ## 河內塔演算法
-規則1. 直徑小的套環永遠在直徑大的套環上<br/>
-規則2. 套環可任意移動<br/>
-規則3. 每次只能移動一個套環<br/>
+規則
+1. 直徑小的套環永遠在直徑大的套環上<br/>
+2. 套環可任意移動<br/>
+3. 每次只能移動一個套環<br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/tower_of_hanoi.gif"><br/>
 
 ## 八皇后演算法
-皇后可以直吃、橫吃及斜吃<br/>
-後放入的新皇后需要考慮是否會被已放入的舊皇后吃掉<br/>
-4x4 棋盤：四皇后<br/>
-8x8 棋盤：八皇后<br/>
+規則
+1. 皇后可以直吃、橫吃及斜吃<br/>
+2. 後放入的新皇后需要考慮是否會被已放入的舊皇后吃掉<br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/8_queen.png"><br/>
 
 
@@ -527,17 +523,17 @@ Bellman-Ford 演算法會鬆弛所有的頂點與邊，即使該頂點已求得�
 分別計數各數字的出現次數，出現次數最多的數即為主元素
 
 ## 排序法
-排序後紀錄各數字的出現次數，當某數字出現次數大於前一個數字的出現次數及更新數字<br/>
-其中由於某個數字必定大於 N/2，所以可以直接找到 N/2 位置的數，此數字即為主元素<br/>
+1. 排序後紀錄各數字的出現次數，當某數字出現次數大於前一個數字的出現次數及更新數字
+2. 其中由於某個數字必定大於 N/2，所以可以直接找到 N/2 位置的數，此數字即為主元素
 
 ## 桶子排序法
-將每個數字分別放入桶子內紀錄次數<br/>
-若數字跨度很大，則將數字離散處理<br/>
+1. 將每個數字分別放入桶子內紀錄次數
+2. 若數字跨度很大，則將數字離散處理
 
 ## 快速排序法
-隨機選擇一數字做為劃分點，小於此數字移動到劃分點左邊，大於此數字移動到右邊<br/>
-如果劃分點右邊的數字較多則往右邊找新的劃分點，反之往左邊找新的劃分點<br/>
-如果新的劃分點等於原劃分點，則該數字即為主元素<br/>
+1. 隨機選擇一數字做為劃分點，小於此數字移動到劃分點左邊，大於此數字移動到右邊
+2. 如果劃分點右邊的數字較多則往右邊找新的劃分點，反之往左邊找新的劃分點
+3. 如果新的劃分點等於原劃分點，則該數字即為主元素
 
 ## 抵銷法
 當碰到兩數不相同的情況時，刪除兩數，最後剩下的數即為主元素
@@ -574,7 +570,7 @@ A水桶有水，且B水桶未倒滿<br/>
 # 穩定匹配問題 Gale-Shapley 演算法
 虛擬碼
 初始化<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/gale_shapley_1.png">、<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/gale_shapley_2.png">，所有的 m 和 w 都是未匹配狀態
-```charp
+```csharp
 while(存在 m 是未匹配狀態，且尚未對每個 w 都匹配過)  
 {  
     選擇一個 m;  
@@ -603,7 +599,7 @@ while(存在 m 是未匹配狀態，且尚未對每個 w 都匹配過)
 是一種二分匹配演算法
 
 基本流程
-```charp
+```csharp
 將圖 G 最大匹配初始化為空  
 while(從 Xi 點開始在圖 G 中找到新的增廣路徑)  
 {  
@@ -622,7 +618,7 @@ while(從 Xi 點開始在圖 G 中找到新的增廣路徑)
 6. 對增廣路徑進行『取反』操作，新的匹配數就比已知匹配數增加一個，也就是說，可以得到一個最大匹配
 
 搜尋增廣路徑的流程
-```charp
+```csharp
 while(從 Xi 的鄰接串列中找到下一個關鍵頂點 Yj)  
 {  
     if(頂點 Yj 不再增廣路徑上)  
@@ -650,7 +646,7 @@ y: 年份，取西元年後兩位，如 1998 年，y = 98，2001 年，y = 1<br/
 d: 某月內的日數<br/>
 
 ## 判斷是否為閨年
-```charp
+```csharp
 private bool IsLeapLear(int year)  
 {  
     return ((year % 4 == 0) && (year % 100 != 0)) || year % 400 == 0;  
@@ -658,7 +654,7 @@ private bool IsLeapLear(int year)
 ```
 
 ## 取得該月天數
-```charp
+```csharp
 private int[] m_daysOfMonth = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };  
 private int GetDaysOfMonth(int year, int month)  
 {  
@@ -678,7 +674,7 @@ private int GetDaysOfMonth(int year, int month)
 ```
 
 ## 取得該日星期
-```charp
+```csharp
 private int ZellerWeek(int year, int month, int day)  
 {  
     int m = month;  
@@ -721,6 +717,7 @@ private int ZellerWeek(int year, int month, int day)
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/nonlinear_equation_1.png"><br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/nonlinear_equation_2.png"><br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/nonlinear_equation_3.png"><br/>
+<br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/nonlinear_equation_4.png">，有兩個不相等實數解<br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/nonlinear_equation_5.png">，有兩個相等實數解<br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/nonlinear_equation_6.png">，沒有實數解，有兩個不相等複數解<br/>
@@ -739,7 +736,7 @@ f(x) 如果存在實數 k，使 f(k) = 0，x = k 則為函數 f(x) 的零點。<
 
 # 幾何與電腦圖形學
 ## 向量
-有大小又有方向的量
+有大小又有方向的量<br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_1.png"><br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_2.png"><br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_3.png"><br/>
@@ -749,16 +746,16 @@ f(x) 如果存在實數 k，使 f(k) = 0，x = k 則為函數 f(x) 的零點。<
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_plus_minus_3.png"><br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_plus_minus_4.png"><br/>
 
-滿足以下性質：
+滿足以下性質：<br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_plus_minus_5.png"><br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_plus_minus_6.png"><br/>
 
 ## 向量內積、點積 Dot Product
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_dot_1.png"><br/>
-<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_dot_2.png">，表示向量 P 和 Q 的夾角
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_dot_2.png">，<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_dot_3.png">表示向量 P 和 Q 的夾角
 
-幾何意義
-取絕對值即為垂直投影的長度
+幾何意義<br/>
+取絕對值即為垂直投影的長度<br/>
 
 如果 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_dot_3.png">，則 P 和 Q 之間的夾角大於 90 度<br/>
 如果 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_dot_4.png">，則 P 和 Q 之間的夾角小於 90 度<br/>
@@ -774,10 +771,10 @@ private float Dot(Vector2 point1, Vector2 point2)
 ## 向量外積、叉積 Cross Product
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_cross_1.png"><br/>
 
-幾何意義
-座標原點(0, 0)、P、Q、P + Q 所組成的平行四邊形面積
+幾何意義<br/>
+座標原點(0, 0)、P、Q、P + Q 所組成的平行四邊形面積<br/>
 
-滿足以下性質：
+滿足以下性質：<br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_cross_2.png"><br/>
 
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_cross_3.png"> 是 P 和 Q 所在平面的法向量<br/>
@@ -869,24 +866,26 @@ private bool IsPointInRect(Rect rect, Vector2 point)
 ```
 
 ## 點與圓的關係
+```csharp
 private bool IsPointInCircle(Vector2 center, float radius, Vector2 point)  
 {  
     return PointDistance(center, point) <= radius;  
 }  
+```
 
 ## 直線
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/line.png"><br/>
 
 ## 圓
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/circle_1.png"><br/>
-<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/circle_2.png">：圓心座標
-<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/circle_3.png">：半徑
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/circle_2.png">：圓心座標<br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/circle_3.png">：半徑<br/>
 
 ## 橢圓
-<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/circle_1.png"><br/>
-<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/circle_2.png">：圓心座標<br/>
-<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/circle_3.png">：長軸<br/>
-<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/circle_4.png">：短軸<br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/oval_1.png"><br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/oval_2.png">：圓心座標<br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/oval_3.png">：長軸<br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/oval_4.png">：短軸<br/>
 
 # 傅立葉變換演算法 Fourier Transform
 時域訊號，座標軸是時間軸，表示訊號強度隨時間變化的情況。<br/>
@@ -919,7 +918,7 @@ private bool IsPointInCircle(Vector2 center, float radius, Vector2 point)
 適應度 Fitness：個體對環境的適應程度，適應度低的個體會逐步淘汰<br/>
 
 # 尋徑演算法
-對稱性：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/path_finding.png"><br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/path_finding.png"><br/>
 
 # 賽局樹 Game Tree
 賽局可以理解為有限參與者進行有限策略選擇的競爭性活動，如下棋、打牌、競技、戰爭等。
@@ -945,7 +944,7 @@ private int MiniMax(node, depth, isMaxPlayer)
     }  
   
     int score = isMaxPlayer ? -INFINITY : INFINITY;  
-    foreach(node's child nodes)  
+    foreach(node's child nodes)
     {  
         int value = MiniMax(child_node, depth - 1, !isMaxPlayer);  
         if(isMaxPlayer)  
@@ -963,7 +962,7 @@ private int MiniMax(node, depth, isMaxPlayer)
 ## 負極大值演算法 Negamax
 由於極大極小值演算法需要個別區分目前的節點是最大值還是最小值節點，而消除了極大極小值的演算法即為負極大值演算法。
 
-核心基礎
+核心基礎<br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/negamax.png"><br/>
 
 ```csharp
@@ -984,14 +983,14 @@ private int NegaMax(node, depth, color)
 ```
 
 ## 剪枝演算法 Alpha-beta Pruning
-<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/alpha.png"> 剪枝：極小值節點搜尋極大值時，極大值中的最小值為<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/alpha.png">，若另一極小值節點的極大值比  還小，則可終止節點搜尋<br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/alpha.png"> 剪枝：極小值節點搜尋極大值時，極大值中的最小值為 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/alpha.png">，若另一極小值節點的極大值比  還小，則可終止節點搜尋<br/>
 <br/>
-<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/beta.png">剪枝：極大值節點搜尋極小值時，極小值中的最大值為<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/beta.png">，若另一極大值節點的極小值比  還大，則可終止節點搜尋<br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/beta.png"> 剪枝：極大值節點搜尋極小值時，極小值中的最大值為 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/beta.png">，若另一極大值節點的極小值比  還大，則可終止節點搜尋<br/>
 <br/>
-搜尋開始時，設定
+搜尋開始時，設定<br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/alpha_infinity.png"><br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/beta_infinity.png"><br/>
-在搜尋過程中，逐步收窄這個範圍，即為<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/alpha_beta.png">剪枝
+在搜尋過程中，逐步收窄這個範圍，即為 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/alpha_beta.png"> 剪枝
 
 ### 井字遊戲
 估值函數：(先手雙連子數 - 後手雙連子數) x 10 + (先手空行數 - 先手空行數) - 後手雙連子數<br/>
