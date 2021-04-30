@@ -742,56 +742,61 @@ f(x) 如果存在實數 k，使 f(k) = 0，x = k 則為函數 f(x) 的零點。<
 
 ## 向量
 有大小又有方向的量
-
-
-
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_1.png"><br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_2.png"><br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_3.png"><br/>
 
 ## 向量加、減法
-、
-
-
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_plus_minus_1.png">、<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_plus_minus_2.png"><br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_plus_minus_3.png"><br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_plus_minus_4.png"><br/>
 
 滿足以下性質：
-
-
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_plus_minus_5.png"><br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_plus_minus_6.png"><br/>
 
 ## 向量內積、點積 Dot Product
-
-，表示向量 P 和 Q 的夾角
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_dot_1.png"><br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_dot_2.png">，表示向量 P 和 Q 的夾角
 
 幾何意義
 取絕對值即為垂直投影的長度
 
-如果 ，則 P 和 Q 之間的夾角大於 90 度
-如果 ，則 P 和 Q 之間的夾角小於 90 度
-如果 ，則 P 和 Q 之間的夾角等於 90 度
+如果 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_dot_3.png">，則 P 和 Q 之間的夾角大於 90 度<br/>
+如果 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_dot_4.png">，則 P 和 Q 之間的夾角小於 90 度<br/>
+如果 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_dot_5.png">，則 P 和 Q 之間的夾角等於 90 度<br/>
 
+```csharp
 private float Dot(Vector2 point1, Vector2 point2)  
 {  
     return point1.x * point2.x + point1.y * point2.y;  
 }  
+```
 
 ## 向量外積、叉積 Cross Product
-
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_cross_1.png"><br/>
 
 幾何意義
 座標原點(0, 0)、P、Q、P + Q 所組成的平行四邊形面積
 
 滿足以下性質：
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_cross_2.png"><br/>
 
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_cross_3.png"> 是 P 和 Q 所在平面的法向量<br/>
+如果 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_cross_4.png">，則 Q 在 P 的逆時針方向<br/>
+如果 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_cross_5.png">，則 Q 在 P 的順時針方向<br/>
+如果 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_cross_6.png">，則 Q 與 P 共線 (方向可能相反)<br/>
 
- 是 P 和 Q 所在平面的法向量
-如果 ，則 Q 在 P 的逆時針方向
-如果 ，則 Q 在 P 的順時針方向
-如果 ，則 Q 與 P 共線 (方向可能相反)
-
+```csharp
 private float Cross(Vector2 point1, Vector2 point2)  
 {  
     return point1.x * point2.y - point2.x * point1.y;  
 }  
+```
 
 ## 內積、外積與長度的關係
-
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_length_relation.png"><br/>
+```csharp
 private void BaseHeight(Vector2 p, Vector2 p1, Vector2 p2)  
 {  
     Vector2 v1 = p1 - p;  
@@ -800,9 +805,11 @@ private void BaseHeight(Vector2 p, Vector2 p1, Vector2 p2)
     float base = Mathf.Abs(Dot(v1, v2)) / VectorLength(v1);  
     float height = Mathf.Abs(Cross(v1, v2)) / VectorLength(v1);  
 }  
+```
 
 ## 內積、外積與角度的關係
-
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_angle_relation.png"><br/>
+```csharp
 private void SinCosTheda(Vector2 p, Vector2 p1, Vector2 p2)  
 {  
     Vector2 v1 = p1 - p;  
@@ -817,14 +824,16 @@ private void SinCosTheda(Vector2 p, Vector2 p1, Vector2 p2)
     float theda = Mathf.Acos(cos);  //[0, π]
     float theda = Mathf.Asin(sin);  //[-π/2, π/2]
 }  
+```
 
 ## 內積與向量夾角的關係
-
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_dot_angle_relation.png"><br/>
 
 ## 外積與向量旋轉的關係
-
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/vector_cross_rotate_relation.png"><br/>
 
 ## 點與點的關係
+```csharp
 private float PointDistance(Vector2 point1, Vector2 point2)  
 {  
     return VectorLength(point2 - point1);  
@@ -834,9 +843,10 @@ private float VectorLength(Vector2 vector2)
 {  
     return Mathf.Sqrt(vector2.x * vector2.x + vector2.y * vector2.y);  
 }  
- 
+```
 
-## 點與線的關係  
+## 點與線的關係 
+```csharp
 private float Distance_PointLine(Vector2 point, Vector2 linePoint1, Vector2 linePoint2)  
 {  
     Vector2 v1 = point - linePoint1;  
@@ -848,15 +858,17 @@ private bool IsPointInLine(Vector2 linePoint1, Vector2 linePoint2, Vector2 point
 {  
     return PointDistance(linePoint1, linePoint2) == (PointDistance(linePoint1, point) + PointDistance(linePoint2, point));  
 }  
- 
+```
 
 ## 點與矩形的關係
+```csharp
 private bool IsPointInRect(Rect rect, Vector2 point)  
 {  
     float x = (point.x - rect.xMin) * (point.x - rect.xMax);  
     float y = (point.y - rect.yMin) * (point.y - rect.yMax);  
     return x <= 0 && y <= 0;  
 }  
+```
 
 ## 點與圓的關係
 private bool IsPointInCircle(Vector2 center, float radius, Vector2 point)  
@@ -865,12 +877,12 @@ private bool IsPointInCircle(Vector2 center, float radius, Vector2 point)
 }  
 
 ## 直線
-
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/line.png"><br/>
 
 ## 圓
-
- ：圓心座標
-：半徑
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/circle_1.png"><br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/circle_2.png">：圓心座標
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/circle_3.png">：半徑
 
 ## 橢圓
 
