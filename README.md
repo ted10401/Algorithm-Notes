@@ -972,7 +972,7 @@ private int NegaMax(node, depth, color)
     {  
         return color * Evaluate(node);  
     }  
-  
+ 
     int score = -INFINITY;  
     foreach(node's child nodes)  
     {  
