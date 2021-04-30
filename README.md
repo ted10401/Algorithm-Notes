@@ -261,27 +261,30 @@ k: 桶子數量<br/>
 
 時間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/time_complexity_nlogn.png"><br/>
 空間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/space_complexity_logn.png"> ~ <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/space_complexity_n.png"><br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/quick_sort.gif"><br/>
 
 
 
 ## 基數排序法 Raix Sort
-最無效鍵優先 Least Significant Digit First, LSD
-從最右邊的位數開始比較
+最無效鍵優先 Least Significant Digit First, LSD<br/>
+從最右邊的位數開始比較<br/>
  
-最有效鍵優先 Most Significant Digit First, MSD
-從最左邊的位數開始比較
+最有效鍵優先 Most Significant Digit First, MSD<br/>
+從最左邊的位數開始比較<br/>
 
-時間複雜度
-Best Case：
-Worst Case：
-Average Case：
+時間複雜度<br/>
+Best Case：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/time_complexity_d*n+r.png"><br/>
+Worst Case：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/time_complexity_d*n+r.png"><br/>
+Average Case：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/time_complexity_d*n+r.png"><br/>
 
-d = 執行回合數
-n = 數列長度
-r = 基數
+d = 執行回合數<br/>
+n = 數列長度<br/>
+r = 基數<br/>
 
-空間複雜度
+空間複雜度<br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/space_complexity_n*r.png"><br/>
 
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/raix_sort.png"><br/>
 
 
 
