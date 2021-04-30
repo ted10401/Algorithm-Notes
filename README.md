@@ -284,7 +284,7 @@ r = 基數<br/>
 空間複雜度<br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/space_complexity_n*r.png"><br/>
 
-<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/raix_sort.png"><br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/raix_sort.gif"><br/>
 
 
 
