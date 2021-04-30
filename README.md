@@ -216,7 +216,7 @@ k: 桶子數量<br/>
 
 時間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/time_complexity_n2.png"><br/>
 空間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/space_complexity_1.png"><br/>
-<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bucket_sort.gif"><br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bubble_sort.gif"><br/>
 
 ## 選擇排序法 Selection Sort
 在未排序數列中找到最大或最小的元素後，加入已排序數列中
