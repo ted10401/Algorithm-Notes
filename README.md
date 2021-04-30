@@ -721,9 +721,9 @@ private int ZellerWeek(int year, int month, int day)
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/nonlinear_equation_1.png"><br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/nonlinear_equation_2.png"><br/>
 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/nonlinear_equation_3.png"><br/>
-<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/nonlinear_equation_4.png">，有兩個不相等實數解
-<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/nonlinear_equation_5.png">，有兩個相等實數解
-<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/nonlinear_equation_6.png">，沒有實數解，有兩個不相等複數解
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/nonlinear_equation_4.png">，有兩個不相等實數解<br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/nonlinear_equation_5.png">，有兩個相等實數解<br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/nonlinear_equation_6.png">，沒有實數解，有兩個不相等複數解<br/>
 
 ## 二分逼近法
 f(x) 如果存在實數 k，使 f(k) = 0，x = k 則為函數 f(x) 的零點。<br/>
