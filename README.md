@@ -204,38 +204,41 @@ perfect hashing 完美雜湊：沒有碰撞也沒有溢位的雜湊函數<br/>
 ## 桶子排序法 Bucket Sort
 假設未排序的資料在一範圍內分布，就將這些資料劃分為數個範圍，並逐一將未排序的資料放入範圍內並計數，最後根據計數將資料取出合併
 
-時間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bucket_sort_time_complexity.png"><br/>
-空間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bucket_sort_space_complexity.png"><br/>
-n: 資料比數
-k: 桶子數量
-
+時間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/time_complexity_n2.png"><br/>
+空間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/space_complexity_1.png"><br/>
+n: 資料比數<br/>
+k: 桶子數量<br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bucket_sort.gif"><br/>
 
 ## 氣泡排序法 Bubble Sort
 從第一個元素開始依序比較相鄰元素大小，如果順序有誤就對調元素
 第一次掃描後能最後一個元素必定是最大或最小值
 
-時間複雜度：
-空間複雜度：
+時間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/time_complexity_n2.png"><br/>
+空間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/space_complexity_1.png"><br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bucket_sort.gif"><br/>
 
 ## 選擇排序法 Selection Sort
 在未排序數列中找到最大或最小的元素後，加入已排序數列中
 
-時間複雜度：
-空間複雜度：
-
+時間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/time_complexity_n2.png"><br/>
+空間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/space_complexity_1.png"><br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/selection_sort.gif"><br/>
 
 ## 插入排序法 Insert Sort
 將未排列的資料逐一與已排列資料比較，並插入適當的位置
 
-時間複雜度：
-空間複雜度：
+時間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/time_complexity_n2.png"><br/>
+空間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/space_complexity_1.png"><br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/insert_sort.gif"><br/>
 
 
 ## 謝耳排序法 Shell Sort
 可以減少插入排序法的資料搬移次數，將資料分成特定間隔的小區塊，用插入排序法排序個區塊內的資料，在逐漸減少間隔距離
 
-時間複雜度：
-空間複雜度：
+時間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/time_complexity_n54.png"><br/>
+空間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/space_complexity_1.png"><br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/shell_sort.gif"><br/>
 
 
 
@@ -250,14 +253,14 @@ k: 桶子數量
 6. 將 N/2 個長度為 2 的數列合併成 N/4 個長度為 4 的數列
 7. 不斷合併直到合併成一組長度為 N 的數列
 
-時間複雜度：
-空間複雜度：
+時間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/time_complexity_nlogn.png"><br/>
+空間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/space_complexity_n.png"><br/>
 
 ## 快速排序法 Quick Sort
 又稱為分割交換排序法，目前公認最佳的排序法，在資料中找到一個隨機設定的虛擬中間值，小於中間值的資料放左邊，大於中間值的資料放右邊，在同樣處理左右兩邊的資料，直到排序結束
 
-時間複雜度：
-空間複雜度： ~ 
+時間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/time_complexity_nlogn.png"><br/>
+空間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/space_complexity_logn.png"> ~ <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/space_complexity_n.png"><br/>
 
 
 
