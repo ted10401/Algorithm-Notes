@@ -568,7 +568,7 @@ A水桶有水，且B水桶未倒滿<br/>
 
 
 # 穩定匹配問題 Gale-Shapley 演算法
-虛擬碼
+虛擬碼<br/>
 初始化<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/gale_shapley_1.png">、<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/gale_shapley_2.png">，所有的 m 和 w 都是未匹配狀態
 ```csharp
 while(存在 m 是未匹配狀態，且尚未對每個 w 都匹配過)  
