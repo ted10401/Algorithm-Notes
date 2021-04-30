@@ -709,10 +709,9 @@ private int ZellerWeek(int year, int month, int day)
 定義是指用連續曲線近似刻劃或比擬平面上一組離散點所表示的座標之間的函數關係，是一種用解析運算式逼近離散資料的方法。
 
 ## 最小平方法 Least Squares
-假設擬合多項式 
-
-離散的各點到這條曲線的平方合則為
-
+假設擬合多項式 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/least_squares_1.png"><br/>
+離散的各點到這條曲線的平方合則為<br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/least_squares_2.png"><br/>
 
 ## 高斯消去法
 可用來求解多元一次線性方程式、矩陣的秩、可逆方陣的矩陣
@@ -720,27 +719,27 @@ private int ZellerWeek(int year, int month, int day)
 
 # 非線性方程式求解
 ## 公式法 
-
-
-
-，有兩個不相等實數解
-，有兩個相等實數解
-，沒有實數解，有兩個不相等複數解
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/nonlinear_equation_1.png"><br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/nonlinear_equation_2.png"><br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/nonlinear_equation_3.png"><br/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/nonlinear_equation_4.png">，有兩個不相等實數解
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/nonlinear_equation_5.png">，有兩個相等實數解
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/nonlinear_equation_6.png">，沒有實數解，有兩個不相等複數解
 
 ## 二分逼近法
-f(x) 如果存在實數 k，使 f(k) = 0，x = k 則為函數 f(x) 的零點。
-如果 f(x) 是單調函數，且 f(a) 和 f(b) 異號，代表 [a, b] 之間一定有零點，此時就可以使用二分逼近法近似地找到這個零點。
+f(x) 如果存在實數 k，使 f(k) = 0，x = k 則為函數 f(x) 的零點。<br/>
+如果 f(x) 是[單調函數](https://zh.wikipedia.org/wiki/%E5%8D%95%E8%B0%83%E5%87%BD%E6%95%B0)，且 f(a) 和 f(b) 異號，代表 [a, b] 之間一定有零點，此時就可以使用二分逼近法近似地找到這個零點。<br/>
 
-如果 ，則  就是零點
-如果 ，則零點在區間 ，令 ，回到 (1)
-如果 ，則零點在區間 ，令 ，回到 (1)
+如果 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bisection_method_1.png">，則 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bisection_method_2.png"> 就是零點
+如果 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bisection_method_3.png">，則零點在區間 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bisection_method_4.png">，令 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bisection_method_5.png">，回到 (1)
+如果 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bisection_method_6.png">，則零點在區間 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bisection_method_7.png">，令 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bisection_method_5.png">，回到 (1)
 
 ## 牛頓法 Newton’s Method
-
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/newtons_method.png">
 
 
 # 幾何與電腦圖形學
-Vector
+[Vector](http://web.ntnu.edu.tw/~algo/Point.html)
 
 ## 向量
 有大小又有方向的量
