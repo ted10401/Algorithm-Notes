@@ -46,8 +46,8 @@
 
 
 ## 時間複雜度 O(f(n))
-假如執行時間 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/%E6%99%82%E9%96%93%E8%A4%87%E9%9B%9C%E5%BA%A6%20-%20%E5%9F%B7%E8%A1%8C%E6%99%82%E9%96%93.png"/><br/>
-則時間複雜度為 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/%E6%99%82%E9%96%93%E8%A4%87%E9%9B%9C%E5%BA%A6.png"/>
+假如執行時間 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/time_complexity.png"><br/>
+則時間複雜度為 <img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/space_complexity.png">
 
 
 ## 常見演算法
@@ -170,24 +170,24 @@ E：所有邊的集合<br/>
 同邊的兩個頂點沒有次序關係<br/>
 V = { A, B, C, D, E }<br/>
 E = { (A, B), (A, E), (B, C), (B, D), (C, D), (C, E), (D, E) }<br/>
-<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/%E7%84%A1%E5%90%91%E5%9C%96%E5%BD%A2.jpg"/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/graph.jpg">
 
 ### 有向圖形 Digraph
 使用 <V1, V2> 表示方向性<br/>
 V = { A, B, C, D, E }<br/>
 E = { <A, B>, <B, C>, <C, D>, <C, E>, <E, D>, <D, B> }<br/>
-<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/%E6%9C%89%E5%90%91%E5%9C%96%E5%BD%A2.jpg"/>
+<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/digraph.jpg">
 
 ## 雜湊表
 儲存紀錄的連續記憶體
 
-bucket 桶：儲存資料的位置，對應唯一的一個位址 bucket address
-slot 槽：每筆紀錄可以包含複數欄位，slot 對應 bucket 中的欄位
-collision 碰撞：兩筆不同資料經過雜湊計算後對應到相同位址
-溢位：資料經過雜湊運算後對應的 bucket 已滿
-synonym 同義字：經過雜湊運算後的數值相同
-loading factor 載入密度：載入密度越大表示雜湊空間使用率越高，碰撞或溢位的機率越高
-perfect hashing 完美雜湊：沒有碰撞也沒有溢位的雜湊函數
+bucket 桶：儲存資料的位置，對應唯一的一個位址 bucket address<br/>
+slot 槽：每筆紀錄可以包含複數欄位，slot 對應 bucket 中的欄位<br/>
+collision 碰撞：兩筆不同資料經過雜湊計算後對應到相同位址<br/>
+溢位：資料經過雜湊運算後對應的 bucket 已滿<br/>
+synonym 同義字：經過雜湊運算後的數值相同<br/>
+loading factor 載入密度：載入密度越大表示雜湊空間使用率越高，碰撞或溢位的機率越高<br/>
+perfect hashing 完美雜湊：沒有碰撞也沒有溢位的雜湊函數<br/>
 
 雜湊函數設計原則
 1. 降低碰撞及溢位
@@ -196,16 +196,16 @@ perfect hashing 完美雜湊：沒有碰撞也沒有溢位的雜湊函數
 
 
 # 排序 Sorting
-將不規則的數值資料依照遞增或遞減方式重新排列
-數值：比較數值大小
-中文字串：比較中文內碼 (繁體 BIG5、簡體 GB)
-非中文字串：比較 ASCII 碼
+將不規則的數值資料依照遞增或遞減方式重新排列<br/>
+數值：比較數值大小<br/>
+中文字串：比較中文內碼 (繁體 BIG5、簡體 GB)<br/>
+非中文字串：比較 ASCII 碼<br/>
 
 ## 桶子排序法 Bucket Sort
 假設未排序的資料在一範圍內分布，就將這些資料劃分為數個範圍，並逐一將未排序的資料放入範圍內並計數，最後根據計數將資料取出合併
 
-時間複雜度：
-空間複雜度：
+時間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bucket_sort_time_complexity.png"><br/>
+空間複雜度：<img src="https://github.com/ted10401/Algorithm-Notes/blob/main/Images/bucket_sort_space_complexity.png"><br/>
 n: 資料比數
 k: 桶子數量
 
